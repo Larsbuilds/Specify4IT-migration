@@ -1,0 +1,30 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "product": "Product"
+  },
+  "home": {
+    "title": "Welcome to Specify4IT",
+    "description": "Streamline your specification process",
+    "features": {
+      "feature1": {
+        "title": "Easy Integration",
+        "description": "Seamlessly integrate with your existing workflow"
+      },
+      "feature2": {
+        "title": "Smart Automation",
+        "description": "Automate repetitive tasks and save time"
+      },
+      "feature3": {
+        "title": "Real-time Collaboration",
+        "description": "Work together with your team in real-time"
+      }
+    }
+  },
+  "footer": {
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "rights": "All rights reserved."
+  }
+}

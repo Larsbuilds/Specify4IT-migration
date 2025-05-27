@@ -1,0 +1,30 @@
+{
+  "navigation": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "product": "Produkt"
+  },
+  "home": {
+    "title": "Willkommen bei Specify4IT",
+    "description": "Optimieren Sie Ihren Spezifikationsprozess",
+    "features": {
+      "feature1": {
+        "title": "Einfache Integration",
+        "description": "Nahtlose Integration in Ihren bestehenden Workflow"
+      },
+      "feature2": {
+        "title": "Intelligente Automatisierung",
+        "description": "Automatisieren Sie wiederkehrende Aufgaben und sparen Sie Zeit"
+      },
+      "feature3": {
+        "title": "Echtzeit-Zusammenarbeit",
+        "description": "Arbeiten Sie in Echtzeit mit Ihrem Team zusammen"
+      }
+    }
+  },
+  "footer": {
+    "privacy": "Datenschutzerklärung",
+    "terms": "Nutzungsbedingungen",
+    "rights": "Alle Rechte vorbehalten."
+  }
+}
