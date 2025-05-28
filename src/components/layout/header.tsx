@@ -13,6 +13,7 @@ import {
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
 import { LanguageDropdown } from '@/components/ui/LanguageDropdown';
+import { ThemeToggle } from '@/components/ui/theme-toggle';
 
 export function Header() {
   const t = useTranslations('navigation');
@@ -37,7 +38,7 @@ export function Header() {
             <Image src="/specify4itlogo.svg" alt="Specify4IT" width={40} height={40} className="h-10 w-auto" />
           </Link>
         </div>
-        <NavigationMenu className="hidden md:block">
+        <NavigationMenu className="hidden md:block" aria-label="Main">
           <NavigationMenuList className="gap-2">
             {navigation.map((item) => (
               <NavigationMenuItem key={item.href}>
@@ -46,7 +47,11 @@ export function Header() {
                   active={pathname === item.href}
                   className={`${navigationMenuTriggerStyle()} text-white hover:text-[#3E7CB1] transition-colors font-medium px-4 py-2 text-sm ${pathname === item.href ? 'bg-[#3E7CB1]/10' : ''}`}
                 >
-                  <Link href={item.href} locale={locale}>
+                  <Link 
+                    href={item.href} 
+                    locale={locale}
+                    aria-current={pathname === item.href ? 'page' : undefined}
+                  >
                     {item.name}
                   </Link>
                 </NavigationMenuLink>
@@ -54,7 +59,8 @@ export function Header() {
             ))}
           </NavigationMenuList>
         </NavigationMenu>
-        <div className="flex lg:flex-1 lg:justify-end">
+        <div className="flex items-center gap-4">
+          <ThemeToggle />
           <LanguageDropdown />
         </div>
       </nav>

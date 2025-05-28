@@ -46,7 +46,12 @@ export function MainHero({
           )}
           <StaggerItem>
             <div className="mt-10 flex justify-center">
-              <Button asChild size="lg" className="bg-[#3E7CB1] hover:bg-[#1A2B3C] text-white">
+              <Button
+                variant="default"
+                size="lg"
+                className="bg-[#3E7CB1] text-white hover:bg-[#1A2B3C]"
+                asChild
+              >
                 <Link href={`/${locale}${ctaHref}`}>{ctaText}</Link>
               </Button>
             </div>

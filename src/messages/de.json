@@ -1,4 +1,7 @@
 {
+  "accessibility": {
+    "skip-to-content": "Zum Hauptinhalt springen"
+  },
   "navigation": {
     "home": "Startseite",
     "about": "Über uns",
@@ -115,6 +118,7 @@
     ],
     "pricing": {
       "title": "Flexible Preispläne",
+      "description": "Wählen Sie den Plan, der am besten zu Ihren Entwicklungsanforderungen passt. Alle Pläne beinhalten Zugang zu unseren Kernfunktionen.",
       "plans": [
         {
           "name": "Professional",

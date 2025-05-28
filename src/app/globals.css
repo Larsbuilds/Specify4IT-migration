@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Ensure consistent box-sizing */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Smooth scrolling for all browsers */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -18,11 +33,19 @@
   }
 
   body {
-    @apply font-sans antialiased;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    @apply antialiased;
+    /* Prevent layout shifts */
+    min-height: 100vh;
+    /* Fix iOS momentum scrolling */
+    -webkit-overflow-scrolling: touch;
+    /* Prevent text inflation */
+    -webkit-text-size-adjust: 100%;
   }
 
   h1, .h1 {
     @apply text-4xl md:text-5xl font-bold text-[#1A2B3C] dark:text-white leading-tight;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
   h2, .h2 {
@@ -44,9 +67,59 @@
   a:hover {
     @apply text-[#1A2B3C] dark:text-[#3E7CB1];
   }
+
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-lg transition-colors;
+  }
+
+  .btn-primary {
+    @apply bg-[#3E7CB1] text-white hover:bg-[#1A2B3C] border-0 font-medium px-4 py-2 rounded-md transition-colors;
+  }
+
+  .btn-secondary {
+    @apply bg-[#1A2B3C] text-white hover:bg-[#3E7CB1] border-0 font-medium px-4 py-2 rounded-md transition-colors;
+  }
+
+  /* Navigation buttons */
+  .nav-btn {
+    @apply bg-[#1A2B3C] text-white hover:bg-[#3E7CB1] dark:bg-[#3E7CB1] dark:text-white dark:hover:bg-[#1A2B3C] border-0 font-medium px-4 py-2 rounded-md transition-colors;
+  }
+
+  /* Hide Next.js button */
+  #__next-build-watcher {
+    display: none !important;
+  }
 }
 
 @layer components {
+  /* Fix flexbox gap in Safari */
+  @supports not (gap: 1rem) {
+    .flex > * + * {
+      margin-left: 1rem;
+    }
+  }
+
+  /* Fix grid gap in Safari */
+  @supports not (gap: 1rem) {
+    .grid > * {
+      margin: 0.5rem;
+    }
+  }
+
+  /* Fix sticky positioning in older browsers */
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+
+  /* Improve animation performance */
+  .animate {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    perspective: 1000px;
+  }
+
   .container-custom {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }

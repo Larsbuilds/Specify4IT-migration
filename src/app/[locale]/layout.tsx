@@ -3,6 +3,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { locales, type Locale } from '@/config';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
+import { SkipLink } from '@/components/ui/skip-link';
 import { Metadata } from 'next';
 import '@/app/globals.css';
 
@@ -42,8 +43,9 @@ export default async function LocaleLayout({ children, params: { locale } }: Pro
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
       <div className="flex min-h-screen flex-col">
+        <SkipLink />
         <Header />
-        <main className="flex-1">{children}</main>
+        <main id="main-content" className="flex-1" tabIndex={-1}>{children}</main>
         <Footer />
       </div>
     </NextIntlClientProvider>

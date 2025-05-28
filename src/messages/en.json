@@ -1,4 +1,7 @@
 {
+  "accessibility": {
+    "skip-to-content": "Skip to main content"
+  },
   "navigation": {
     "home": "Home",
     "about": "About",
@@ -115,6 +118,7 @@
     ],
     "pricing": {
       "title": "Flexible Pricing Plans",
+      "description": "Choose the plan that best fits your development needs. All plans include access to our core features.",
       "plans": [
         {
           "name": "Professional",
