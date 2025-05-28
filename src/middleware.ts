@@ -8,7 +8,7 @@ const middleware = createMiddleware({
   localePrefix: 'always'
 });
 
-export default function (request: NextRequest) {
+export default function handleLocaleRouting(request: NextRequest) {
   const pathname = new URL(request.url).pathname;
   console.log('Middleware handling request for:', pathname);
   return middleware(request);

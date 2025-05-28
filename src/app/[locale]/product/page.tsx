@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import { PageTransition } from '@/components/animations/page-transition';
 import { SectionTransition } from '@/components/animations/section-transition';
 
@@ -26,10 +27,12 @@ export default function ProductPage() {
                 <SectionTransition key={feature.title} delay={index * 0.2}>
                   <div className="space-y-4 p-6 bg-white dark:bg-[#1A2B3C]/50 rounded-lg shadow-lg">
                     <div className="w-12 h-12 bg-[#3E7CB1] rounded-lg flex items-center justify-center mb-4">
-                      <img
+                      <Image
                         src={`/icons/feature/${feature.icon.toLowerCase()}.svg`}
                         alt={`${feature.title} icon`}
-                        className="w-6 h-6 text-white"
+                        width={24}
+                        height={24}
+                        className="text-white"
                       />
                     </div>
                     <h2 className="text-2xl font-semibold text-[#1A2B3C] dark:text-white">
