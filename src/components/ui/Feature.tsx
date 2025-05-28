@@ -1,5 +1,5 @@
 import { FadeInView } from '../animations/FadeInView';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./card";
+import { Card, CardDescription, CardHeader, CardTitle } from "./card";
 import Image from 'next/image';
 
 interface FeatureProps {
