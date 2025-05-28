@@ -5,14 +5,14 @@ const geist = Geist({
   display: 'swap',
 });
 
+interface RootLayoutProps {
+  children: React.ReactNode;
+}
+
 export default function RootLayout({
   children,
-  params,
-}: {
-  children: React.ReactNode;
-  params?: { locale?: string };
-}) {
-  const locale = params?.locale || 'en';
+}: RootLayoutProps) {
+  const locale = 'en';
   
   return (
     <html lang={locale} className={`${geist.className} dark`} suppressHydrationWarning>
