@@ -13,6 +13,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
+import { LanguageDropdown } from '@/components/ui/LanguageDropdown';
 
 export function Header() {
   const t = useTranslations('navigation');
@@ -29,7 +30,7 @@ export function Header() {
   }));
 
   return (
-    <header className="bg-[#1A2B3C] border-b border-[#3E7CB1]/10">
+    <header className="bg-[#1A2B3C] border-b border-[#3E7CB1]/10 relative z-40">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         <div className="flex lg:flex-1">
           <Link href={`/${locale}`} className="-m-1.5 p-1.5">
@@ -55,30 +56,9 @@ export function Header() {
           </NavigationMenuList>
         </NavigationMenu>
         <div className="flex lg:flex-1 lg:justify-end">
-          <LanguageSwitcher currentPath={pathname} />
+          <LanguageDropdown />
         </div>
       </nav>
     </header>
-  );
-}
-
-function LanguageSwitcher({ currentPath }: { currentPath: string }) {
-  return (
-    <div className="flex gap-4">
-      <Link
-        href={currentPath}
-        locale="en"
-        className="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100"
-      >
-        EN
-      </Link>
-      <Link
-        href={currentPath}
-        locale="de"
-        className="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100"
-      >
-        DE
-      </Link>
-    </div>
   );
 }

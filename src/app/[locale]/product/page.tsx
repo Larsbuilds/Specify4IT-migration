@@ -1,0 +1,80 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
+import { FadeInView } from '@/components/animations/FadeInView';
+import { StaggerContainer, StaggerItem } from '@/components/animations/StaggerContainer';
+
+export default function ProductPage() {
+  const t = useTranslations('product');
+
+  return (
+    <main className="flex min-h-screen flex-col">
+      <section className="py-24">
+        <div className="container mx-auto px-6">
+          <StaggerContainer>
+            <StaggerItem>
+              <FadeInView>
+                <h1 className="text-4xl font-bold text-[#1A2B3C] dark:text-white text-center mb-8">
+                  {t('title')}
+                </h1>
+                <p className="text-[#666666] dark:text-[#F8F9FA]/80 text-center max-w-2xl mx-auto mb-16">
+                  {t('description')}
+                </p>
+              </FadeInView>
+            </StaggerItem>
+
+            <StaggerItem>
+              <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                {t.raw('features').map((feature: { title: string; description: string; icon: string }, index: number) => (
+                  <FadeInView key={feature.title} delay={index * 0.2}>
+                    <div className="space-y-4 p-6 bg-white dark:bg-[#1A2B3C]/50 rounded-lg shadow-lg">
+                      <div className="w-12 h-12 bg-[#3E7CB1] rounded-lg flex items-center justify-center mb-4">
+                        {/* Icon placeholder - we'll need to add proper icons later */}
+                        <span className="text-white text-2xl">{feature.icon}</span>
+                      </div>
+                      <h2 className="text-2xl font-semibold text-[#1A2B3C] dark:text-white">
+                        {feature.title}
+                      </h2>
+                      <p className="text-[#666666] dark:text-[#F8F9FA]/80 leading-relaxed">
+                        {feature.description}
+                      </p>
+                    </div>
+                  </FadeInView>
+                ))}
+              </div>
+            </StaggerItem>
+
+            <StaggerItem>
+              <div className="mt-24 text-center">
+                <h2 className="text-3xl font-bold text-[#1A2B3C] dark:text-white mb-8">
+                  {t('pricing.title')}
+                </h2>
+                <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                  {t.raw('pricing.plans').map((plan: { name: string; price: string; features: string[] }, index: number) => (
+                    <FadeInView key={plan.name} delay={index * 0.2}>
+                      <div className="p-8 bg-white dark:bg-[#1A2B3C]/50 rounded-lg shadow-lg">
+                        <h3 className="text-2xl font-semibold text-[#1A2B3C] dark:text-white mb-4">
+                          {plan.name}
+                        </h3>
+                        <p className="text-3xl font-bold text-[#3E7CB1] mb-6">
+                          {plan.price}
+                        </p>
+                        <ul className="space-y-4">
+                          {plan.features.map((feature: string) => (
+                            <li key={feature} className="text-[#666666] dark:text-[#F8F9FA]/80">
+                              {feature}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </FadeInView>
+                  ))}
+                </div>
+              </div>
+            </StaggerItem>
+          </StaggerContainer>
+        </div>
+      </section>
+    </main>
+  );
+}

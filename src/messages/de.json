@@ -2,29 +2,150 @@
   "navigation": {
     "home": "Startseite",
     "about": "Über uns",
-    "product": "Produkt"
+    "product": "Produkt",
+    "languages": {
+      "en": "Englisch",
+      "de": "Deutsch"
+    }
   },
   "home": {
-    "title": "Willkommen bei Specify4IT",
-    "description": "Optimieren Sie Ihren Spezifikationsprozess",
-    "features": {
-      "feature1": {
-        "title": "Einfache Integration",
-        "description": "Nahtlose Integration in Ihren bestehenden Workflow"
+    "cta": {
+      "title": "Bereit, Ihren Entwicklungsprozess zu transformieren?",
+      "description": "Schließen Sie sich der wachsenden Gemeinschaft von Entwicklern an, die mit Specify4IT™ bessere Software schneller erstellen.",
+      "button": "Jetzt loslegen"
+    },
+    "hero": {
+      "title": "Innovative Technologie. Eine leistungsstarke neue Softwarelösung.",
+      "subtitle": "Das Specify4IT Automated Reasoning Toolset erstellt fehlerfreien Code aus nachweisbaren Spezifikationen.",
+      "description": "Specify4IT™ ist ein innovatives Produkt, das speziell für Entwickler konzipiert und entwickelt wurde, die relationale Datenbanksoftware von Anfang an richtig erstellen möchten.",
+      "cta": "Mehr erfahren"
+    },
+    "features": [
+      {
+        "title": "Prüfen",
+        "description": "Überprüfen Sie, ob es Konflikte in Ihren Spezifikationen gibt",
+        "icon": "check"
       },
-      "feature2": {
-        "title": "Intelligente Automatisierung",
-        "description": "Automatisieren Sie wiederkehrende Aufgaben und sparen Sie Zeit"
+      {
+        "title": "Animieren",
+        "description": "Visualisieren Sie Benutzerverhaltensspezifikationen",
+        "icon": "animate"
       },
-      "feature3": {
-        "title": "Echtzeit-Zusammenarbeit",
-        "description": "Arbeiten Sie in Echtzeit mit Ihrem Team zusammen"
+      {
+        "title": "Ableiten",
+        "description": "Extrahieren und klären Sie Kundenanforderungen",
+        "icon": "deduce"
+      },
+      {
+        "title": "Beweisen",
+        "description": "Validieren Sie Anwendungseigenschaften mathematisch",
+        "icon": "prove"
       }
+    ],
+    "about": {
+      "title": "Über das Toolset",
+      "features": [
+        {
+          "title": "Strukturieren Sie Ihre Software",
+          "description": "Dieses automatisierte Toolset ermöglicht es dem Benutzer, Software strukturiert zu spezifizieren, was zu beweisbaren Spezifikationen führt, die vor der Codegenerierung überprüft und animiert werden können."
+        },
+        {
+          "title": "Effizienter Workflow",
+          "description": "Das Ergebnis ist fehlerfreier Code, der per Knopfdruck erstellt wird; geschätzt mit der Hälfte der Zeit und der Hälfte der Arbeitskräfte herkömmlicher Methoden."
+        }
+      ]
+    }
+  },
+  "about": {
+    "title": "Über Specify4IT",
+    "description": "Erfahren Sie, wie unser innovatives Toolset die Softwareentwicklung durch automatisiertes Reasoning und beweisbare Spezifikationen transformiert.",
+    "sections": [
+      {
+        "title": "Unsere Mission",
+        "content": "Bei Specify4IT setzen wir uns dafür ein, die Softwareentwicklung durch zuverlässigere, effizientere und mathematisch fundierte Methoden zu revolutionieren. Unsere Mission ist es, Entwickler mit Werkzeugen auszustatten, die Fehler verhindern, bevor sie entstehen."
+      },
+      {
+        "title": "Die Technologie",
+        "content": "Unser automatisiertes Reasoning-Toolset verbindet formale Methoden mit praktischer Softwareentwicklung. Durch den Einsatz mathematischer Beweise und Spezifikationen stellen wir sicher, dass Ihre Software von Anfang an genau wie beabsichtigt funktioniert."
+      },
+      {
+        "title": "Warum Specify4IT?",
+        "content": "Mit Specify4IT können Sie die Entwicklungszeit um bis zu 50% reduzieren und gleichzeitig qualitativ hochwertigeren Code erstellen. Unser Toolset hilft Ihnen, Fehler frühzeitig zu erkennen und zu vermeiden, wodurch Sie wertvolle Zeit und Ressourcen im Entwicklungsprozess sparen."
+      },
+      {
+        "title": "Unsere Vision",
+        "content": "Wir sehen eine Zukunft vor uns, in der Softwareentwicklung vorhersehbarer, effizienter und fehlerfrei ist. Indem wir die Lücke zwischen formalen Methoden und praktischer Entwicklung schließen, machen wir diese Zukunft heute Realität."
+      }
+    ]
+  },
+  "product": {
+    "title": "Specify4IT Produkt",
+    "description": "Entdecken Sie, wie unser automatisiertes Reasoning-Toolset Ihren Softwareentwicklungsprozess transformieren kann.",
+    "features": [
+      {
+        "title": "Spezifikationsverifizierung",
+        "description": "Verifizieren Sie Ihre Spezifikationen automatisch auf Konflikte und Inkonsistenzen, bevor Sie Code schreiben.",
+        "icon": "✓"
+      },
+      {
+        "title": "Verhaltensanimation",
+        "description": "Visualisieren und validieren Sie Benutzerverhaltensspezifikationen durch interaktive Animationen.",
+        "icon": "▶"
+      },
+      {
+        "title": "Anforderungsanalyse",
+        "description": "Extrahieren und klären Sie Kundenanforderungen mit unseren fortschrittlichen Analysewerkzeugen.",
+        "icon": "⚡"
+      },
+      {
+        "title": "Mathematische Beweise",
+        "description": "Validieren Sie Anwendungseigenschaften mit rigorosen mathematischen Beweisen.",
+        "icon": "∑"
+      },
+      {
+        "title": "Code-Generierung",
+        "description": "Generieren Sie fehlerfreien Code direkt aus Ihren verifizierten Spezifikationen.",
+        "icon": "⌨"
+      },
+      {
+        "title": "Integrations-Support",
+        "description": "Nahtlose Integration in Ihren bestehenden Entwicklungsworkflow und Ihre Tools.",
+        "icon": "⚙"
+      }
+    ],
+    "pricing": {
+      "title": "Flexible Preispläne",
+      "plans": [
+        {
+          "name": "Professional",
+          "price": "499€/Monat",
+          "features": [
+            "Bis zu 5 Teammitglieder",
+            "Alle Kernfunktionen",
+            "Basis-Support",
+            "Community-Zugang",
+            "Regelmäßige Updates"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "Individuell",
+          "features": [
+            "Unbegrenzte Teammitglieder",
+            "Alle Kernfunktionen",
+            "Prioritäts-Support",
+            "Individuelle Integrationen",
+            "Schulung & Einarbeitung",
+            "SLA-Garantien"
+          ]
+        }
+      ]
     }
   },
   "footer": {
     "privacy": "Datenschutzerklärung",
     "terms": "Nutzungsbedingungen",
+    "contact": "Kontakt",
     "rights": "Alle Rechte vorbehalten."
   }
 }

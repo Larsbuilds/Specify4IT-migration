@@ -3,32 +3,46 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --primary: 212 50% 40%;
+    --primary-light: 207 51% 47%;
+  }
+
+  .dark {
+    --background: 212 50% 17%;
+    --foreground: 210 40% 98%;
+    --primary: 207 51% 47%;
+    --primary-light: 207 51% 57%;
+  }
+
   body {
-    @apply font-sans text-[#333333] bg-white antialiased;
+    @apply font-sans antialiased;
   }
 
   h1, .h1 {
-    @apply text-h1 font-bold text-[#1A2B3C] leading-tight;
+    @apply text-4xl md:text-5xl font-bold text-[#1A2B3C] dark:text-white leading-tight;
   }
 
   h2, .h2 {
-    @apply text-h2 font-bold text-[#1A2B3C] leading-snug;
+    @apply text-3xl md:text-4xl font-bold text-[#1A2B3C] dark:text-white leading-snug;
   }
 
   h3, .h3 {
-    @apply text-h3 font-semibold text-[#1A2B3C] leading-relaxed;
+    @apply text-2xl md:text-3xl font-semibold text-[#1A2B3C] dark:text-white leading-relaxed;
   }
 
   p {
-    @apply text-body text-[#333333] leading-relaxed;
+    @apply text-base text-[#333333] dark:text-[#F8F9FA] leading-relaxed;
   }
 
   a {
-    @apply text-[#3E7CB1] no-underline transition-colors duration-200;
+    @apply text-[#3E7CB1] dark:text-[#F8F9FA] no-underline transition-colors duration-200;
   }
 
   a:hover {
-    @apply text-[#1A2B3C];
+    @apply text-[#1A2B3C] dark:text-[#3E7CB1];
   }
 }
 

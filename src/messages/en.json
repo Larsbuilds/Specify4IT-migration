@@ -2,24 +2,144 @@
   "navigation": {
     "home": "Home",
     "about": "About",
-    "product": "Product"
+    "product": "Product",
+    "languages": {
+      "en": "English",
+      "de": "German"
+    }
   },
   "home": {
-    "title": "Welcome to Specify4IT",
-    "description": "Streamline your specification process",
-    "features": {
-      "feature1": {
-        "title": "Easy Integration",
-        "description": "Seamlessly integrate with your existing workflow"
+    "cta": {
+      "title": "Ready to Transform Your Development Process?",
+      "description": "Join the growing community of developers who are creating better software faster with Specify4IT™.",
+      "button": "Get Started Now"
+    },
+    "hero": {
+      "title": "Innovative technology. A powerful new software solution.",
+      "subtitle": "The Specify4IT automated reasoning toolset creates error free code from provable specifications.",
+      "description": "Specify4IT™ is an innovative product conceived, designed and built specifically for developers who want to create relational database software right first time.",
+      "cta": "Learn More"
+    },
+    "features": [
+      {
+        "title": "Check",
+        "description": "Verify there are no conflicts in your specifications",
+        "icon": "check"
       },
-      "feature2": {
-        "title": "Smart Automation",
-        "description": "Automate repetitive tasks and save time"
+      {
+        "title": "Animate",
+        "description": "Visualize user behavior specifications",
+        "icon": "animate"
       },
-      "feature3": {
-        "title": "Real-time Collaboration",
-        "description": "Work together with your team in real-time"
+      {
+        "title": "Deduce",
+        "description": "Extract and clarify customer requirements",
+        "icon": "deduce"
+      },
+      {
+        "title": "Prove",
+        "description": "Validate application properties mathematically",
+        "icon": "prove"
       }
+    ],
+    "about": {
+      "title": "About the Toolset",
+      "features": [
+        {
+          "title": "Structure your software",
+          "description": "This automated toolset enables a user to specify software in a structured way, resulting in provable specifications that can be checked and animated prior to generating any code."
+        },
+        {
+          "title": "Efficient workflow",
+          "description": "The result of this is error-free code, created at the click of a button; estimated to take half the time and with half the workforce of conventional methods."
+        }
+      ]
+    }
+  },
+  "about": {
+    "title": "About Specify4IT",
+    "description": "Learn how our innovative toolset is transforming software development through automated reasoning and provable specifications.",
+    "sections": [
+      {
+        "title": "Our Mission",
+        "content": "At Specify4IT, we're committed to revolutionizing software development by making it more reliable, efficient, and mathematically sound. Our mission is to empower developers with tools that eliminate errors before they happen."
+      },
+      {
+        "title": "The Technology",
+        "content": "Our automated reasoning toolset combines formal methods with practical software development. By using mathematical proofs and specifications, we ensure your software works exactly as intended from the start."
+      },
+      {
+        "title": "Why Choose Us",
+        "content": "With Specify4IT, you can reduce development time by up to 50% while ensuring higher quality code. Our toolset helps you catch and prevent errors early, saving valuable time and resources in the development process."
+      },
+      {
+        "title": "Our Vision",
+        "content": "We envision a future where software development is more predictable, efficient, and error-free. By bridging the gap between formal methods and practical development, we're making this future a reality today."
+      }
+    ]
+  },
+  "product": {
+    "title": "Specify4IT Product",
+    "description": "Discover how our automated reasoning toolset can transform your software development process.",
+    "features": [
+      {
+        "title": "Specification Verification",
+        "description": "Automatically verify your specifications for conflicts and inconsistencies before writing any code.",
+        "icon": "✓"
+      },
+      {
+        "title": "Behavior Animation",
+        "description": "Visualize and validate user behavior specifications through interactive animations.",
+        "icon": "▶"
+      },
+      {
+        "title": "Requirement Analysis",
+        "description": "Extract and clarify customer requirements using our advanced analysis tools.",
+        "icon": "⚡"
+      },
+      {
+        "title": "Mathematical Proofs",
+        "description": "Validate application properties using rigorous mathematical proofs.",
+        "icon": "∑"
+      },
+      {
+        "title": "Code Generation",
+        "description": "Generate error-free code directly from your verified specifications.",
+        "icon": "⌨"
+      },
+      {
+        "title": "Integration Support",
+        "description": "Seamlessly integrate with your existing development workflow and tools.",
+        "icon": "⚙"
+      }
+    ],
+    "pricing": {
+      "title": "Flexible Pricing Plans",
+      "plans": [
+        {
+          "name": "Professional",
+          "price": "$499/month",
+          "features": [
+            "Up to 5 team members",
+            "All core features",
+            "Basic support",
+            "Community access",
+            "Regular updates"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "features": [
+            "Unlimited team members",
+            "All core features",
+            "Priority support",
+            "Custom integrations",
+            "Training & onboarding",
+            "SLA guarantees"
+          ]
+        }
+      ]
     }
   },
   "footer": {

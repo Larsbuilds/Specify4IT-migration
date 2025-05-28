@@ -15,8 +15,8 @@ export default function RootLayout({
   const locale = params?.locale || 'en';
   
   return (
-    <html lang={locale} className={geist.className}>
-      <body className="min-h-screen bg-background text-text-primary antialiased">
+    <html lang={locale} className={`${geist.className} dark`} suppressHydrationWarning>
+      <body className="min-h-screen bg-white dark:bg-[#1A2B3C] text-[#333333] dark:text-white antialiased" suppressHydrationWarning>
         {children}
       </body>
     </html>
