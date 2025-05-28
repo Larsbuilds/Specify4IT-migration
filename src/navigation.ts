@@ -3,11 +3,11 @@
 import { useRouter, usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { useLocale } from 'next-intl';
-import { locales } from './config';
+
 
 export { Link, useRouter, usePathname, useLocale };
 
-export function redirect(url: string) {
+export function useRedirect() {
   const router = useRouter();
-  router.push(url);
+  return (url: string) => router.push(url);
 }

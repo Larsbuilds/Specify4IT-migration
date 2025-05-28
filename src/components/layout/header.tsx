@@ -1,16 +1,15 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { useLocale } from 'next-intl';
 import { usePathname } from 'next/navigation';
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
 import { LanguageDropdown } from '@/components/ui/LanguageDropdown';
@@ -35,7 +34,7 @@ export function Header() {
         <div className="flex lg:flex-1">
           <Link href={`/${locale}`} className="-m-1.5 p-1.5">
             <span className="sr-only">Specify4IT</span>
-            <img src="/specify4itlogo.svg" alt="Specify4IT" className="h-10 w-auto" />
+            <Image src="/specify4itlogo.svg" alt="Specify4IT" width={40} height={40} className="h-10 w-auto" />
           </Link>
         </div>
         <NavigationMenu className="hidden md:block">

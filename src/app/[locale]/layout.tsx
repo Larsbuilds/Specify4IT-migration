@@ -27,7 +27,7 @@ type Props = {
 async function getMessages(locale: Locale) {
   try {
     return (await import(`../../messages/${locale}.json`)).default;
-  } catch (error) {
+  } catch (_error) {
     notFound();
   }
 }

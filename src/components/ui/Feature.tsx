@@ -1,5 +1,6 @@
 import { FadeInView } from '../animations/FadeInView';
-import { Card, CardHeader, CardTitle, CardDescription } from './card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./card";
+import Image from 'next/image';
 
 interface FeatureProps {
   features: {
@@ -19,9 +20,11 @@ export function Features({ features }: FeatureProps) {
               <Card className="bg-[#F8F9FA] dark:bg-[#1A2B3C] border-[#3E7CB1]/10 hover:border-[#3E7CB1]/30 transition-colors">
                 <CardHeader>
                   <div className="w-12 h-12 mb-4 p-2 bg-white dark:bg-[#1A2B3C]/50 rounded-lg shadow-sm">
-                    <img 
+                    <Image 
                       src={`/icons/feature/${feature.icon}.svg`}
                       alt={feature.title}
+                      width={48}
+                      height={48}
                       className="w-full h-full text-[#3E7CB1]"
                     />
                   </div>

@@ -2,7 +2,7 @@
 
 import { FadeInView } from '../animations/FadeInView';
 import { StaggerContainer, StaggerItem } from '../animations/StaggerContainer';
-import { H2, Lead } from './typography';
+import { H2 } from './typography';
 
 interface AboutToolsetProps {
   title: string;

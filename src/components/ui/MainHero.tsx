@@ -1,4 +1,4 @@
-import { FadeInView } from '../animations/FadeInView';
+
 import { StaggerContainer, StaggerItem } from '../animations/StaggerContainer';
 import { H1, Lead, Paragraph } from './typography';
 import { Button } from './button';
